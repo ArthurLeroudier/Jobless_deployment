@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jobless-frontend
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/arthurleroudier/Jobless_deployment.git
+    targetRevision: main
+    path: deployment_front
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: user-aleroudier
+  syncPolicy:
+    automated:
+      selfHeal: true

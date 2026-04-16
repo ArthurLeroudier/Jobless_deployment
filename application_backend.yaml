@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ensae-mlops
+  name: jobless_backend
 spec:
   project: default
   source:
@@ -10,7 +10,7 @@ spec:
     path: deployment
   destination:
     server: https://kubernetes.default.svc
-    namespace: aleroudier-aleroudier
+    namespace: arthurleroudier-aleroudier
   syncPolicy:
     automated:
       selfHeal: true

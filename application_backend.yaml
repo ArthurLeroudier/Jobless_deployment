@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: jobless_backend
+  name: jobless-backend
 spec:
   project: default
   source:

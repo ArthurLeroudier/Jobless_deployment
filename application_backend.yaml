@@ -10,7 +10,7 @@ spec:
     path: deployment
   destination:
     server: https://kubernetes.default.svc
-    namespace: arthurleroudier-aleroudier
+    namespace: user-aleroudier
   syncPolicy:
     automated:
       selfHeal: true

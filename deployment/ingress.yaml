@@ -12,7 +12,7 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-1    - jobless.lab.sspcloud.fr
+    - jobless.lab.sspcloud.fr
   rules:
   - host: jobless.lab.sspcloud.fr
     http:

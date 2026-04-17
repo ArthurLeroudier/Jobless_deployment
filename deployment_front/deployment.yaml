@@ -20,9 +20,3 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8501
-        env:
-                - name: FRONT_KEY
-                  valueFrom:
-                    secretKeyRef:
-                      name: front-jeton
-                      key: FRONT_KEY

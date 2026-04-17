@@ -83,7 +83,7 @@ kubectl apply -f application_frontend.yaml
 - **Image** : `arthurleroudier/jobless_front:v1.0` — `imagePullPolicy: Always`
 - **Port** : `8501`
 - **Replicas** : 1
-- **Secret requis** : `front-jeton` (clé `FRONT_KEY`)
+- **Secret requis** : Aucun
 - **Exposition** : Service LoadBalancer + Ingress NGINX
 - **URL publique** : `https://jobless-website.lab.sspcloud.fr`
 
@@ -97,11 +97,6 @@ Avant tout déploiement, créer les secrets dans le namespace cible :
 # Clé API LLM (backend)
 kubectl create secret generic api-jeton \
   --from-literal=API_KEY='votre_clé_api_llm' \
-  -n user-aleroudier
-
-# Clé frontend (si applicable)
-kubectl create secret generic front-jeton \
-  --from-literal=FRONT_KEY='votre_clé_front' \
   -n user-aleroudier
 ```
 

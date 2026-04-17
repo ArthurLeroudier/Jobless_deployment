@@ -12,9 +12,9 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - jobless-website.lab.sspcloud.fr
+    - jobless-app.lab.sspcloud.fr
   rules:
-  - host: jobless-website.lab.sspcloud.fr
+  - host: jobless-app.lab.sspcloud.fr
     http:
       paths:
       - path: /

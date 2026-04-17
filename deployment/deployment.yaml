@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jobless
-        image: arthurleroudier/jobless:v1.0
+        image: arthurleroudier/jobless:main
         ports:
         - containerPort: 8000
         env:
